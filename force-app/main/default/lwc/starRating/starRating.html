@@ -1,0 +1,10 @@
+<template>
+  <template for:item='star' for:each={stars} >
+    <c-star key={star.id}
+      onselected={starClicked}
+      star={star}
+      read-only={readOnly}
+      active-color={activeColor}
+      inactive-color={inactiveColor} ></c-star>
+  </template>
+</template>
